@@ -1,4 +1,4 @@
-require "vertx"
+equire "vertx"
 include Vertx
 
 EventBus.register_handler('ping-address') do |msg|

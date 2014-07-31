@@ -1,10 +1,10 @@
 package com.mycompany.myproject.test.unit;
 
-import com.mycompany.myproject.PingVerticle;
-import org.junit.Assert;
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import com.talentica.chat.PingVerticle;
 
 /*
  * Copyright 2013 Red Hat, Inc.
