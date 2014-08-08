@@ -1,12 +1,8 @@
-# Vert.x Gradle Template
+STEPS to run this application
+=============================
+1) Clone this application
+2) Open Terminal and change current directory to cloned source code
+3) Type "gradlew.bat runmod" if you are on windows or "./gradlew rumod" if you are on macos or *nix.
+4) Open browsers like chrome or firefox and type http://localhost:9090. IE will not be supported.
 
-Template project for creating a Vert.x module with a Gradle build.
 
-Clone this and adapt it to easily develop Vert.x modules using Gradle as your build tool.
-
-By default this module contains a simple Java verticle which listens on the event bus and responds to `ping!`
-messages with `pong!`.
-
-This template also shows you how to write tests in Java, Groovy, Ruby and Python
-
-See the [build script](build.gradle) for the list of useful tasks
