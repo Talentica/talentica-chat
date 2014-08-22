@@ -3,8 +3,11 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Talentica Chat</title>
+<script src="js/URI.js"></script>
 <script language="javascript" type="text/javascript">
-	var wsUri = "ws://172.19.4.63:9099";
+	var myHostname=URI(window.location).hostname();
+	var wsUri = "ws://"+myHostname+":9099";
+	alert(wsUri);
 
 	var output;
 	function init() {
@@ -59,6 +62,11 @@
 		typedText.value = "";
 	}
 	window.addEventListener("load", init, false);
+	
+	function showURL(){
+	
+		alert(wsUri);
+	}
 </script>
 </head>
 <body>
@@ -69,6 +77,7 @@
 		<input text="t" id="msg"> </input>
 		<button onclick="clickSend()">Submit</button>
 	</div>
+	<button onclick="showURL()">Shows URL</button>
 </body>
 </html>
 
